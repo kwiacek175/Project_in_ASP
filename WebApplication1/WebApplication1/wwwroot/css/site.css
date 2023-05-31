@@ -1,0 +1,23 @@
+html {
+    font-size: 14px;
+    position: relative;
+    min-height: 100%;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+body {
+    color: midnightblue;
+    margin-bottom: 60px;
+    background-image: url('/image/tlo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+footer {
+    background-color:bisque;
+}

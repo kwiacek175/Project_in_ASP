@@ -1,0 +1,36 @@
+﻿@page
+@model WebApplication1.Pages.Alcohols.IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="row">
+    <div class="col-md-3">
+        <h3 style="display: inline-block; margin-right: 10px;">Exchange rates:</h3>
+        <ul>
+            <li><font color="blue"><b>EUR = @ViewData["CurrencyRateEUR"] PLN</b></font></li>
+            <li><font color="blue"><b>USD = @ViewData["CurrencyRateUSD"] PLN</b></font></li>
+            <li><font color="blue"><b>CHF = @ViewData["CurrencyRateCHF"] PLN</b></font></li>
+            <li><font color="blue"><b>GBP = @ViewData["CurrencyRateGBP"] PLN</b></font></li>
+        </ul>
+        <p><b><a href="https://www.walutomat.pl/">online currency exchange</a></b></p>
+        
+
+
+        <h3 style="display: inline-block; margin-right: 10px;">Weather information:</h3>
+        <p><font color="blue"><b>Actual temperature: @ViewData["WeatherCelsi"] C</b></font></p>
+        <p><b>Find more information here <a href="https://www.twojapogoda.pl/prognoza-16dni-polska/dolnoslaskie-wroclaw/">weather forecast</a></b></p>
+    </div>
+    <div class="col-md-9">
+        <div class="text-center">
+            <h1 class="display-4"><b>Welcome! Alcohol for everyone!</b></h1>
+            <p><b>Buy here <a href="https://alkohol-online.pl/">the best alcohols</a>.</b></p>
+            <p><b>The time on the server is @DateTime.Now</b></p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
